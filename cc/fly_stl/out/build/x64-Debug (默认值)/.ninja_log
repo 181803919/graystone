@@ -1,0 +1,5 @@
+# ninja log v5
+17	2017	622042179	skip/CMakeFiles/SkipLib.dir/skip_list.cpp.obj	3739183df62f8ff4
+3	2064	622042179	CMakeFiles/fly_stl_test.dir/main.cpp.obj	75d8ef674c1aa806
+2021	2130	622042179	skip/SkipLib.lib	15dc353dc2eddb2
+2130	2660	622042180	fly_stl_test.exe	e060e4abc28f34d7

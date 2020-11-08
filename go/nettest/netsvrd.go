@@ -6,39 +6,39 @@ import (
 	"strings"
 )
 
-func HandleConn(conn net.Conn)  {
+func HandleConn(conn net.Conn) {
 	defer conn.Close()
 	addr := conn.RemoteAddr().String()
 	fflog.FFDebug("%s connect sucessful", addr)
 
 	tm_buf := make([]byte, 2048)
 
-	for{
+	for {
 		n, err := conn.Read(tm_buf)
-		if err != nil{
-			fflog.FFDebug( "err = %v", err)
+		if err != nil {
+			fflog.FFDebug("err = %v", err)
 		}
 
-		fflog.FFDebug( "recv buf:%s", string(tm_buf[:n]))
-		conn.Write([]byte(strings.ToUpper(string(tm_buf[:n]))))
+		fflog.FFDebug("recv buf:%s", string(tm_buf[:n]))
+		_, _ = conn.Write([]byte(strings.ToUpper(string(tm_buf[:n]))))
 	}
 }
 
 func main() {
 	defer fflog.Close()
-	fflog.Open()
+	_, _ = fflog.Open()
 
 	listen, err := net.Listen("tcp", ":18000")
-	if err != nil{
+	if err != nil {
 		fflog.FFDebug("err = %v", err)
 		return
 	}
 	defer listen.Close()
 
-	for{
+	for {
 		conn, err := listen.Accept()
-		if err != nil{
-			fflog.FFDebug( "err=%v", err)
+		if err != nil {
+			fflog.FFDebug("err=%v", err)
 			return
 		}
 

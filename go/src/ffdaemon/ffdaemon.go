@@ -8,9 +8,18 @@ import(
 
 var depth_value int = 0
 
+/*
+//for windows
 func NewSysProcAttr() *syscall.SysProcAttr {
     return &syscall.SysProcAttr{
         HideWindow: true,
+    }
+}
+*/
+
+func NewSysProcAttr() *syscall.SysProcAttr {
+    return &syscall.SysProcAttr{
+        Setsid:true,
     }
 }
 

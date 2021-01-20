@@ -32,16 +32,16 @@ var log_level_string = [...]string{"", "LM_TRACE", "LM_DEBUG", "LM_INFO","LM_WAR
 var log *Log_Handle
 
 func FFLog(log_level int8, v string, args ...interface{}){
+    str := getNowTimeMsec() + "@" + log_level_string[log_level] + "@" + fmt.Sprintf(v, args...)
+
     if log == nil {
+        fmt.Println(str)
         return
     }
 
     if log_level < log.log_level_ {
         return
     }
-
-    str := getNowTimeMsec() + "@" + log_level_string[log_level] + "@" + fmt.Sprintf(v, args...)
-    fmt.Println(str)
     log.file_writer_.WriteString(str + "\n")
 }
 
@@ -88,8 +88,8 @@ func (log *Log_Handle) logTimer(){
     for{
         select {
         case <- log.log_ticker_.C:
-            log.file_writer_.WriteString(getNowTimeMsec() + "@" +
-                log_level_string[log.log_level_] + "@" + "Log Flush!.\n")
+            /*log.file_writer_.WriteString(getNowTimeMsec() + "@" +
+                log_level_string[log.log_level_] + "@" + "Log Flush!.\n")*/
             log.file_writer_.Flush()
         case stop := <-log.ch_:
             if stop{

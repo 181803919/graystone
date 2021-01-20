@@ -4,3 +4,7 @@
 
 /.vs
 /cc/fly_stl/.vs
+/bin
+*.tar.gz
+*.log
+*.obj

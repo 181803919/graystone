@@ -20,21 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6153ee7-26c0-41e3-a442-65c8e0d51988" name="Default Changelist" comment="重命名">
-      <change afterPath="$PROJECT_DIR$/nettest/filesvrd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nettest/filesvrd.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nettest/myfilesvrd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nettest/myfilesvrd.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nettest/myfilesvrd.go_20210119" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nettest/myfilesvrd.tar.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nettest/myfilesvrd1.tar.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nettest/myfilesvrd2.tar.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nettest/myfilesvrd3.tar.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nettest/nohup.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/myfilesvrd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shell/gobuild.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nettest/nethttptest.go" beforeDir="false" afterPath="$PROJECT_DIR$/nettest/nethttptest.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nettest/nethttptest.go_20210118" beforeDir="false" afterPath="$PROJECT_DIR$/nettest/nethttptest.go_20210118" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nettest/netsvrd.go_20201109" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ffdaemon/ffdaemon.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/ffdaemon/ffdaemon.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nettest/myfilesvrd.go" beforeDir="false" afterPath="$PROJECT_DIR$/nettest/myfilesvrd.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fflog/fflog.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/fflog/fflog.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

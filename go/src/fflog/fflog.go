@@ -4,7 +4,9 @@ import (
     "bufio"
     "fmt"
     "os"
+    "path"
     "runtime"
+    "strings"
     "sync"
     "time"
 )
@@ -71,14 +73,15 @@ func getNowTimeMsec() string{
 
 func Open() (*Log_Handle, error){
     _, file, _, _ := runtime.Caller(1)
-    return OpenEx(file, LOG_DEBUG)
+    fileName := strings.Split(path.Base(file), ".")[0]
+    fmt.Println(fileName)
+    return OpenEx("./log/" + fileName, LOG_DEBUG)
 }
 
 func OpenEx(prefix string, log_level int8) (*Log_Handle, error){
     if log != nil {
         return log, nil
     }
-
     wg := sync.WaitGroup{}
     return openWg(&wg, prefix, log_level)
 }
@@ -114,12 +117,15 @@ func openWg(wg *sync.WaitGroup, prefix string, log_level int8) (*Log_Handle, err
     time_fmt := fmt.Sprintf("%d%02d%02d", time_now.Year(),
     time_now.Month(), time_now.Day())
 
-    path := log.file_prefix_ + "_" + time_fmt
+    _ = os.MkdirAll(path.Dir(log.file_prefix_), 0777)
+    path := log.file_prefix_ + "_" + time_fmt + ".log"
     var err error
     log.file_cur_, err = os.OpenFile(path, os.O_WRONLY | os.O_CREATE | os.O_APPEND, 0666)
     if err != nil {
         return nil, err
     }
+
+    fmt.Println(path)
 
     log.log_ticker_ = time.NewTicker(time.Second)
     log.file_writer_ = bufio.NewWriter(log.file_cur_)

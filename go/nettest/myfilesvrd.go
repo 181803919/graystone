@@ -4,6 +4,7 @@ import (
 	"crypto/md5"
 	"encoding/hex"
 	"encoding/json"
+	"ffdaemon"
 	"fflog"
 	"fmt"
 	"io"
@@ -21,11 +22,12 @@ curl -X POST "http://192.168.56.101:39100/svrlistupload" -H "accept: application
 */
 
 func main(){
-	//ffdaemon.Daemon()
-	//fflog.Open()
-	//defer fflog.Close()
+	ffdaemon.Daemon()
+	fflog.Open()
+	//fflog.OpenEx("/home/golog/filesvrd", fflog.LOG_DEBUG)
+	defer fflog.Close()
 
-	fflog.FFDebug("Listen On 18888!")
+	fflog.FFDebug("Listen On 16666!")
 	http.HandleFunc("/svrlistupload", upLoad)
 
 	err := http.ListenAndServe("0.0.0.0:16666", nil)

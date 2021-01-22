@@ -20,12 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6153ee7-26c0-41e3-a442-65c8e0d51988" name="Default Changelist" comment="重命名">
-      <change afterPath="$PROJECT_DIR$/bin/myfilesvrd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../shell/gobuild.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/addmachine" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/doshell" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nettest/addmachine.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nettest/doshell.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/wxbizmsgcrypt/wxbizmsgcrypt.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nettest/myfilesvrd.go" beforeDir="false" afterPath="$PROJECT_DIR$/nettest/myfilesvrd.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fflog/fflog.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/fflog/fflog.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/myfilesvrd" beforeDir="false" afterPath="$PROJECT_DIR$/bin/myfilesvrd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shell/gobuild.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../shell/gobuild.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +77,11 @@
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="Z:\graystone\go\src" />
+    </key>
   </component>
   <component name="RunManager" selected="Go Build.go build nethttptest.go">
     <configuration name="go build nethttpclient.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -150,18 +157,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="重命名" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="416" y="0" key="#GOPATH" timestamp="1602380236558">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="416" y="0" key="#GOPATH/0.0.1280.680@0.0.1280.680" timestamp="1602380236558" />
     <state x="434" y="174" key="#Go_Modules" timestamp="1604888030708">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="434" y="174" key="#Go_Modules/0.0.1280.680@0.0.1280.680" timestamp="1604888030708" />
-    <state x="250" y="37" key="#Inspections" timestamp="1602380257251">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="250" y="37" key="#Inspections/0.0.1280.680@0.0.1280.680" timestamp="1602380257251" />
     <state x="289" y="0" key="#Intentions" timestamp="1604887790232">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -210,9 +209,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="584" y="159" key="com.goide.refactor.move.GoMoveDeclarationDialog/0.0.1280.680@0.0.1280.680" timestamp="1604831342597" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1611056356507">
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1611234276939">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1611056356507" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1611234276939" />
   </component>
 </project>

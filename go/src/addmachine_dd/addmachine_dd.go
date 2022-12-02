@@ -14,6 +14,7 @@ func modifyMachine(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	ffdaemon.Daemon()
 	//	ffdaemon.Daemon()
 	fflog.Open()
 	defer fflog.Close()

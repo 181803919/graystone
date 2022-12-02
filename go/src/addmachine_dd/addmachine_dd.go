@@ -1,6 +1,7 @@
 package main
 
 import (
+	"ffdaemon"
 	"fflog"
 	"net/http"
 )
@@ -14,8 +15,8 @@ func modifyMachine(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	//test git
 	ffdaemon.Daemon()
-	//	ffdaemon.Daemon()
 	fflog.Open()
 	defer fflog.Close()
 
